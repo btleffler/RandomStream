@@ -2,7 +2,8 @@
   "use strict";
   var random = document.getElementById("random")
     , body = document.body
-    , header = document.getElementsByTagName("h1")[0];
+    , header = document.getElementsByTagName("h1")[0]
+    , isntReloading = true;
 
   // Connecting/Loading stuff
   random.appendChild(document.createTextNode("Connecting"));
@@ -30,7 +31,7 @@
     });
 
     // Handle incoming data
-    client.on("stream", function (stream, meta) {
+    client.on("stream", function (stream) {
       stream.on("data", function (data) {
         var i = 0
           , out = []
@@ -48,13 +49,14 @@
         // Output the numbers
         random.appendChild(document.createTextNode(' ' + out.join(' ')));
 
+        // Don't clutter things up too, too much
+        if (random.childNodes.length > 2000 && isntReloading) {
+          window.location.reload();
+          isntReloading = false; // keep from spamming reload()
+        }
+
         // Scroll to the bottom
         random.scrollTop = random.scrollHeight;
-
-        // Don't clutter things up too much
-        if (random.childNodes.length > 500) {
-          random.removeChild(random.firstChild);
-        }
       });
     });
   });

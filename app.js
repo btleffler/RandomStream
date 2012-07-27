@@ -11,6 +11,7 @@ var express = require('express')
 
 var app = express()
   , theFile = '/dev/random'
+  , streams = 0
   , server, httpServer;
 
 app.configure(function(){
@@ -40,7 +41,9 @@ httpServer.listen(app.get('port'), function(){
 server = binaryjs.BinaryServer({ server: httpServer })
 
 server.on('connection', function (client) {
-  var stream = read(theFile, {bufferSize: 128});
+  var stream = read(theFile, { bufferSize: 128 });
+
+  console.log(++streams + " open");
 
   // Start sending /dev/random
   client.send(stream);
@@ -48,5 +51,6 @@ server.on('connection', function (client) {
   // Close the stream when they disconnect
   client.on('close', function () {
     stream.destroy();
+    console.log(--streams + " open");
   });
 });
