@@ -17,5 +17,7 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 
 [Jade Templating Language](https://github.com/visionmedia/jade)
 
+[And obviously NodeJS](http://www.nodejs.org)
+
 ###Demo
 http://random.bleff.jit.su/
