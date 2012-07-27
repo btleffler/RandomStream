@@ -50,6 +50,11 @@
 
         // Scroll to the bottom
         random.scrollTop = random.scrollHeight;
+
+        // Don't clutter things up too much
+        if (random.childNodes.length > 500) {
+          random.removeChild(random.firstChild);
+        }
       });
     });
   });
