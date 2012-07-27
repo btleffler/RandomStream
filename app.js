@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -41,7 +40,7 @@ httpServer.listen(app.get('port'), function(){
 server = binaryjs.BinaryServer({ server: httpServer })
 
 server.on('connection', function (client) {
-  var stream = read(theFile);
+  var stream = read(theFile, {bufferSize: 128});
 
   // Start sending /dev/random
   client.send(stream);
