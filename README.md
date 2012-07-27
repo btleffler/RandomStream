@@ -8,6 +8,8 @@ $ cd RandomStream && npm install
 $ node app.js
 ````
 
+Then open your browser and look at `http://localhost:3000/`. You might need to move your mouse around or do something to generate entropy.
+
 ##Uses
 [BinaryJS (Very cool stuff)](https://github.com/binaryjs/binaryjs)
 [ExpressJS Framework](https://github.com/visionmedia/express)
