@@ -1,4 +1,4 @@
-#Random Stream
+[#Random Stream](http://random.bleff.jit.su/)
 * Stream `/dev/random` to the browser in real time. You know, for when you're bored.
 
 ##Usage
@@ -16,3 +16,6 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 [ExpressJS Framework](https://github.com/visionmedia/express)
 
 [Jade Templating Language](https://github.com/visionmedia/jade)
+
+###Demo
+http://random.bleff.jit.su/
