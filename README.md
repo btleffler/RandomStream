@@ -12,5 +12,7 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 
 ##Uses
 [BinaryJS (Very cool stuff)](https://github.com/binaryjs/binaryjs)
+
 [ExpressJS Framework](https://github.com/visionmedia/express)
+
 [Jade Templating Language](https://github.com/visionmedia/jade)
