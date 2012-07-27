@@ -1,4 +1,4 @@
-[#Random Stream](http://random.bleff.jit.su/)
+#[Random Stream](http://random.bleff.jit.su/)
 * Stream `/dev/random` to the browser in real time. You know, for when you're bored.
 
 ##Usage
