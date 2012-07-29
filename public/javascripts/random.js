@@ -50,6 +50,7 @@ function formatIndex(val) {
     , pauseButton = document.getElementById("pause")
     , formatChoice = document.getElementById("format")
     , format = getFormat()
+    , OutFormat = format === "10" ? Int8Array : Uint8Array; // Might as well sign decimal
     , isntReloading = true;
 
   // Connecting/Loading stuff
@@ -94,7 +95,7 @@ function formatIndex(val) {
           , len;
 
         // Get data from the ArrayBuffer
-        data = new Uint8Array(data);
+        data = new OutFormat(data);
         len = data.length;
 
         // Parse it to binary
