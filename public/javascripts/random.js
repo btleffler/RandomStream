@@ -50,7 +50,7 @@ function formatIndex(val) {
     , pauseButton = document.getElementById("pause")
     , formatChoice = document.getElementById("format")
     , format = getFormat()
-    , OutFormat = format === "10" ? Int8Array : Uint8Array; // Might as well sign decimal
+    , OutFormat = format === "10" ? Int8Array : Uint8Array // Might as well sign decimal
     , isntReloading = true;
 
   // Connecting/Loading stuff
