@@ -10,3 +10,15 @@ a {
 #random {
   overflow: auto;
 }
+
+#header {
+    display: inline-block;
+}
+
+#options {
+    float: right;
+}
+
+#pause {
+  margin: 0 0 0 15px;
+}

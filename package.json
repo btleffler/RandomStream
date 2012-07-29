@@ -1,13 +1,13 @@
 {
   "name": "RandomStream",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.0.0rc1",
-    "jade": "*",
-    "binaryjs": "*"
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "binaryjs": "0.1.x"
   },
   "subdomain": "random.bleff",
   "engines": {

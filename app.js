@@ -19,7 +19,6 @@ app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
-  app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
@@ -28,6 +27,7 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler());
+  app.use(express.logger('dev'));
 });
 
 app.get('/', routes.index);
@@ -38,7 +38,7 @@ httpServer.listen(app.get('port'), function(){
 });
 
 // Binary server stuff
-server = binaryjs.BinaryServer({ server: httpServer })
+server = binaryjs.BinaryServer({ server: httpServer });
 
 server.on('connection', function (client) {
   var stream = read(theFile, { bufferSize: 128 });
