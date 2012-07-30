@@ -1,3 +1,10 @@
+// Feature Check
+if (typeof window.WebSocket === "undefined"
+  || typeof window.Int8Array === "undefined"
+  || typeof window.Uint8Array === "undefined") {
+  window.location = document.URL + "browser";
+}
+
 // Get the format from the cookie
 function getFormat() {
   var arr = document.cookie.split(';')

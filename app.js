@@ -31,6 +31,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/browser', routes.browser);
 
 httpServer = http.createServer(app);
 httpServer.listen(app.get('port'), function(){

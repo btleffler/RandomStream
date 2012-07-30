@@ -1,6 +1,6 @@
 {
   "name": "RandomStream",
-  "version": "2.0.1-3",
+  "version": "2.0.2",
   "scripts": {
     "start": "node app.js"
   },
