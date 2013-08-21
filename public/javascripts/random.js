@@ -85,6 +85,8 @@ function formatIndex(val) {
 
     // Make sure we're trying to connect to the correct port
     if (port !== "80" && !url.match(/:\d*$/)) {
+      // Get rid of any trailing slash and put the port on the end
+      url = url.replace(/\/$/, '');
       url += ':' + port;
     }
 
