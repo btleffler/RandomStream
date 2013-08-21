@@ -9,6 +9,7 @@ a {
 
 #random {
   overflow: auto;
+  text-align: justify;
 }
 
 #header {
