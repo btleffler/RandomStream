@@ -81,7 +81,7 @@ function formatIndex(val) {
       , url = document.URL
       , client;
 
-    url.replace(/^http|^https/, "ws");
+    url = url.replace(/^http|^https/, "ws");
 
     // Make sure we're trying to connect to the correct port
     if (port !== "80" && !url.match(/:\d*$/)) {

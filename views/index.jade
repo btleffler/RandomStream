@@ -11,7 +11,7 @@ block content
       option(value="16") Hexedecimal
     button#pause &nbsp;Pause&nbsp;
   #random
-  fieldset
-    input#port(type="hidden")= port
+  fieldset(style="display: none;")
+    input#port(type="hidden", value=port)
   script(src="http://cdn.binaryjs.com/0/binary.js")
   script(src="/javascripts/random.js")
