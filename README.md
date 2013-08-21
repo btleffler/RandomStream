@@ -1,4 +1,4 @@
-#[Random Stream](http://random.btleffler.com:41780)
+#[Random Stream](http://random.btleffler.com)
 * Stream `/dev/random` to the browser in real time. You know, for when you're bored.
 
 ##Usage
@@ -20,4 +20,4 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 [And obviously NodeJS](http://www.nodejs.org)
 
 ###Demo
-http://random.btleffler.com:41780
+http://random.btleffler.com
