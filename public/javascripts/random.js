@@ -77,7 +77,18 @@ function formatIndex(val) {
 
   // Wait for everything to load before we start doing stuff
   window.addEventListener("load", function () {
-    var client = new BinaryClient(document.URL.replace(/^http/, "ws"));
+    var port = document.getElementById("port").value
+      , url = document.URL
+      , client;
+
+    url.replace(/^http|^https/, "ws");
+
+    // Make sure we're trying to connect to the correct port
+    if (port !== "80" && !url.match(/:\d*$/)) {
+      url += ':' + port;
+    }
+
+    client = new BinaryClient(url);
 
     // Stop "loading" and clear everything out
     client.on("open", function () {

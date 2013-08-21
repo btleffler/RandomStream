@@ -4,7 +4,7 @@
  */
 
 exports.index = function (req, res){
-  res.render('index', { title: 'Random Stream' });
+  res.render('index', { title: 'Random Stream', port: process.env.PORT || 3000 });
 };
 
 exports.browser = function (req, res) {
