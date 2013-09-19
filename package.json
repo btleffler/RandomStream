@@ -9,8 +9,5 @@
     "jade": "0.27.x",
     "binaryjs": "0.1.x"
   },
-  "subdomain": "random.bleff",
-  "engines": {
-    "node": "0.6.x"
-  }
+  "license": "MIT"
 }
