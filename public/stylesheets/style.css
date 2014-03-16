@@ -12,12 +12,18 @@ a {
   text-align: justify;
 }
 
+#head {
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
 #header {
-    display: inline-block;
+  display: inline-block;
 }
 
 #options {
-    float: right;
+  float: right;
+  display: inline-block;
 }
 
 #pause {

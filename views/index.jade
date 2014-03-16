@@ -1,15 +1,16 @@
 extends layout
 
 block content
-  h1#header
-    a(href="https://github.com/btleffler/RandomStream", target="_blank", title="Github Repo") Streaming /dev/random
-  #options
-    label(for="format") Format:
-    select#format
-      option(value="2") Binary
-      option(value="10") Decimal
-      option(value="16") Hexedecimal
-    button#pause &nbsp;Pause&nbsp;
+  #head
+    h1#header
+      a(href="https://github.com/btleffler/RandomStream", target="_blank", title="Github Repo") Streaming /dev/random
+    #options
+      label(for="format") Format:
+      select#format
+        option(value="2") Binary
+        option(value="10") Decimal
+        option(value="16") Hexedecimal
+      button#pause &nbsp;Pause&nbsp;
   #random
   fieldset(style="display: none;")
     input#port(type="hidden", value=port)
