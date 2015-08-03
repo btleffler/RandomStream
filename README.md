@@ -19,9 +19,6 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 
 [And obviously NodeJS](http://www.nodejs.org)
 
-###Demo
-http://random.btleffler.com
-
 ###License - MIT
 Copyright (c) 2013 Benjamin Leffler
 
