@@ -1,7 +1,7 @@
-#[Random Stream](http://random.btleffler.com)
+# [Random Stream](http://random.btleffler.com)
 * Stream `/dev/random` to the browser in real time. You know, for when you're bored.
 
-##Usage
+## Usage
 ````bash
 $ git clone git://github.com/btleffler/RandomStream.git
 $ cd RandomStream && npm install
@@ -10,7 +10,7 @@ $ node app.js
 
 Then open your browser and look at `http://localhost:3000/`. You might need to move your mouse around or do something to generate entropy.
 
-##Uses
+## Uses
 [BinaryJS (Very cool stuff)](https://github.com/binaryjs/binaryjs)
 
 [ExpressJS Framework](https://github.com/visionmedia/express)
@@ -19,7 +19,7 @@ Then open your browser and look at `http://localhost:3000/`. You might need to m
 
 [And obviously NodeJS](http://www.nodejs.org)
 
-###License - MIT
+### License - MIT
 Copyright (c) 2013 Benjamin Leffler
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
